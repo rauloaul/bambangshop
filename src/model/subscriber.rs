@@ -5,9 +5,8 @@ use rocket::tokio;
 use bambangshop::REQWEST_CLIENT;
 use create::model::notification::Notification;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
-
 pub struct Subscriber {
     pub url: String,
     pub name: String,

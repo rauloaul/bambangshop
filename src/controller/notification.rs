@@ -1,5 +1,5 @@
 use rocket::response::status::Created;
-use rocket rocket::serde::json::Json;
+use rocket::serde::json::Json;
 
 use bambangshop::Result;
 use crate::model::subscriber::Subscriber;
